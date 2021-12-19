@@ -4,11 +4,11 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-user_recommandation=pd.read_csv('data/final_rating.csv')
+user_recommandation=pd.read_csv('Data/final_rating.csv')
 user_recommandation.set_index('user',inplace=True)
 tfid = pickle.load(open('pickle/tfid.pkl','rb'))
 randomforest = pickle.load(open('pickle/randomforest_model.pkl','rb'))
-data=pd.read_csv('data/processed_sample30.csv')
+data=pd.read_csv('Data/processed_sample30.csv')
 
 
 
